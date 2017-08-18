@@ -1,0 +1,6 @@
+#!/bin/bash
+cd src/greatappxyz/api-services
+title='Api Services'
+echo -n -e "\033]0;$title\007"
+sh gradlew build -x test
+java -jar build/libs/api-services-0.0.1-SNAPSHOT.jar
